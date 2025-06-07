@@ -28,3 +28,9 @@ header, footer {
     padding: 1rem;
     background-color:#ddd;
 }
+.logo{
+    font-size: 2rem;
+    color: rgb(12, 12, 12);
+    padding-right: 1rem;
+
+}
