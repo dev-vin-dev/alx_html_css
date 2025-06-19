@@ -1,0 +1,94 @@
+/*Reset basic styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*General page styles*/
+:root {
+    --clr-background: #D8D8D8;
+    --clr-text: #ffffff;
+    --clr-primary: #e94b61;
+    --font-family: Source Sans Pro;
+    --max-width: 1400px;
+    --max-height: 800px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color:var(--clr-text);
+    line-height: 1.6;
+    text-align: center;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1 rem;
+}
+/*Section Styling*/
+.section-results {
+    background: url('headphones_hero_2.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.results-description{
+    max-width: 652px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    margin-bottom: 10vh;
+}
+
+/*Cards Wrapper*/
+.results-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+   
+}
+/*Individual cards*/
+.result-item {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    flex flex-shrink: 0;
+}
+.pentagon-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*Text overlay*/
+.result-text {
+    position: absolute;
+    top:22%;
+    left: 14%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    pointer-events: none;
+}
+.result-item h3{
+    margin: 0;
+    font-size: 46px;
+    font-weight: bold;
+}
+.result-text p{
+    margin: 0.3rem 0 0;
+    font-size: 14px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    
+}
