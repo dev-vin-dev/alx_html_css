@@ -1,0 +1,64 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background and section styling */
+body {
+  font-family: sans-serif;
+  color: white;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.results-section {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.description p {
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* Pentagon grid */
+.pentagon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Draw Pentagon */
+.pentagon {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background: #ff6b6b;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pentagon .content {
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.pentagon .content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.pentagon .content p {
+  font-size: 12px;
+}

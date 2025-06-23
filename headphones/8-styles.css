@@ -1,0 +1,121 @@
+/*==Reset Styles==*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==CSS Variables==*/
+:root {
+    --clr-background: #D8D8D8;
+    --clr-text: #ffffff;
+    --clr-primary: #e94b61;
+    --font-family: Source Sans Pro;
+    --max-width: 1400px;
+    --max-height: 800px;
+}
+
+/*==Global Styles==*/
+body {
+    font-family: var(--font-family);
+    background-color: var(--clr-background);
+    color: var(--clr-text);
+}
+
+.container{
+    width: 90%;
+    max-width: var(--max-width)
+    margin: 0 auto;
+}
+
+/*== Header Styles==*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    z-index: 10;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 200.61px;
+    height: auto;
+}
+.nav a{
+    color: var(--clr-text)
+    text-declaration: none;
+    margin-left: 20px;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.nav a:hover{
+    color: var(--clr-primary)
+}
+
+/*===MainParts===*/
+.main{
+    height:100vh;
+    background: url('headphones_hero_1.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.main::before{
+    content:"";
+    position: absolute;
+    inset: 0;
+    background-color: rdba(0,0,0,0.6);
+    z-index: 1;    
+}
+.main_part{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.main h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.subtext{
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.main .description  {
+    font-size: 652pxpx;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--clr-primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.btn:hover{
+    background-color: #d6384f;
+}
+.description{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
